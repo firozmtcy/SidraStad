@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sidra Städ – Rent hem, bättre liv</title>
+
+<style>
+:root{--blue:#12326e;--green:#2e8b3a;--bg:#fff;--soft:#eef6fb;--text:#1b2a41;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--blue:#8db4ff;--green:#5fcf6e;--bg:#0f1824;--soft:#162334;--text:#e6edf6}}
+:root[data-theme="dark"]{--blue:#8db4ff;--green:#5fcf6e;--bg:#0f1824;--soft:#162334;--text:#e6edf6}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;max-width:1000px;margin:0 auto}
+header img{height:56px}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:700;border:0;font-size:1rem;cursor:pointer}
+.hero{background:linear-gradient(135deg,var(--soft),var(--bg));padding:50px 0;text-align:center}
+h1{font-size:clamp(1.9rem,5vw,3rem);color:var(--blue);margin:0 0 10px}
+h2{color:var(--blue);text-align:center;margin:0 0 24px}
+section{padding:44px 0}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.c{background:var(--soft);border-radius:16px;padding:20px;text-align:center}
+.c b{display:block;color:var(--blue);font-size:1.1rem}
+.p{font-size:1.5rem;color:var(--green);font-weight:800;margin-top:8px}
+form{background:var(--soft);padding:24px;border-radius:16px;display:grid;gap:12px;max-width:600px;margin:0 auto}
+input,select,textarea{width:100%;padding:11px;border-radius:10px;border:1px solid #9ab;font:inherit;background:var(--bg);color:var(--text)}
+footer{background:var(--blue);color:#fff;text-align:center;padding:28px 20px}
+footer a{color:#fff}
+</style></head><body>
+
+<header><img src="logo.png" alt="Sidra Städ"><a class="btn" href="#boka">Boka städning</a></header>
+
+<div class="hero"><div class="w">
+<h1>Rent hem • Bättre liv</h1>
+<p>Sidra Städ erbjuder professionell städning för privatpersoner och företag i Stockholm &amp; Uppsala län. Vi gör rent – du får mer tid!</p>
+<a class="btn" href="#boka">Boka nu</a></div></div>
+
+<section id="om"><div class="w"><h2>Om oss</h2>
+<p style="max-width:700px;margin:auto;text-align:center">Vi är ett städföretag som sätter kvalitet, pålitlighet och noggrannhet först. Vi erbjuder flexibla tider anpassade efter dig, och hjälper både privatpersoner och företag med allt från vardagsstädning till flytt- och byggstädning.</p></div></section>
+
+<section style="background:var(--soft)"><div class="w"><h2>Våra tjänster</h2><div class="g">
+<div class="c" style="background:var(--bg)"><b>Hemstädning</b></div>
+<div class="c" style="background:var(--bg)"><b>Storstädning</b></div>
+<div class="c" style="background:var(--bg)"><b>Flyttstädning</b></div>
+<div class="c" style="background:var(--bg)"><b>Fönsterputsning</b></div>
+<div class="c" style="background:var(--bg)"><b>Trappstädning</b></div>
+<div class="c" style="background:var(--bg)"><b>Byggstädning</b></div></div></div></section>
+
+<section id="priser"><div class="w"><h2>Priser</h2><div class="g">
+<div class="c"><b>Flyttstädning</b><div class="p">från 30 kr/kvm</div></div>
+<div class="c"><b>Hemstädning</b><div class="p">260 kr/tim</div></div>
+<div class="c"><b>Fönsterputs</b><div class="p">från 100 kr</div></div></div>
+<p style="text-align:center;opacity:.8">Kontakta oss för offert på storstädning, trapp- och byggstädning.</p></div></section>
+
+<section id="boka" style="background:var(--soft)"><div class="w"><h2>Boka städning</h2>
+<form id="f">
+<input id="n" placeholder="Namn" required>
+<input id="t" type="tel" placeholder="Telefon" required>
+<input id="e" type="email" placeholder="E-post">
+<select id="s"><option>Hemstädning</option><option>Storstädning</option><option>Flyttstädning</option><option>Fönsterputsning</option><option>Trappstädning</option><option>Byggstädning</option></select>
+<input id="d" type="date">
+<input id="a" placeholder="Adress / ort (Stockholm eller Uppsala län)">
+<textarea id="m" rows="3" placeholder="Meddelande (t.ex. antal kvm)"></textarea>
+<button class="btn" type="submit">Skicka bokningsförfrågan</button>
+<small>Knappen öppnar ditt e-postprogram med bokningen ifylld. Du kan också ringa <a href="tel:0729095021">072-909 50 21</a>.</small>
+</form></div></section>
+
+<footer><b>Sidra Städ</b><br>Stockholm &amp; Uppsala län<br>
+<a href="tel:0729095021">0729095021</a> • <a href="mailto:info@xn--sidrastd-cza.se">Info@sidrastäd.se</a><br>
+<small>Följ oss på <a href="https://www.facebook.com/profile.php?id=61594870603918" target="_blank" rel="noopener">Facebook</a> &amp; <a href="https://www.tiktok.com/@sidrastad?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener">TikTok</a></small></footer>
+
+<script>
+document.getElementById('f').onsubmit=function(ev){
+  ev.preventDefault();
+  var g=function(i){return document.getElementById(i).value};
+  var b="Tjänst: "+g('s')+"\nDatum: "+g('d')+"\nNamn: "+g('n')+"\nTelefon: "+g('t')+"\nE-post: "+g('e')+"\nAdress: "+g('a')+"\n\n"+g('m');
+  location.href="mailto:info@xn--sidrastd-cza.se?subject="+encodeURIComponent("Bokning: "+g('s'))+"&body="+encodeURIComponent(b);
+};
+</script>
+</body></html>
